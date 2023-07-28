@@ -26,7 +26,8 @@
 <script lang="ts" setup>
 import { ref, reactive, onMounted, Ref, defineComponent } from 'vue'
 import { nanoid } from 'nanoid'
-import VirtualScrollList from '@/components/VirtualScrollList.vue'
+import VirtualScrollList from '../dist/lib/vue3-virtual-scroll-list.js'
+import '../lib/style.css'
 
 defineComponent({
   VirtualScrollList
@@ -91,6 +92,7 @@ p {
   margin: 10px 0;
   border: 1px #EEEEEE solid;
   border-radius: 8px;
+  width: 70vw;
 
   .action {
     display: flex;
