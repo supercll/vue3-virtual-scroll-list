@@ -1,7 +1,7 @@
 {
   "name": "vue3-virtual-scroll-list-component",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,10 +20,11 @@
     "typescript": "^5.1.6",
     "vite": "^4.4.5",
     "vue-tsc": "^1.8.8",
-    "vue3-virtual-scroll-list-component": "^0.0.3"
+    "vue3-virtual-scroll-list-component": "^0.0.4"
   },
   "files": [
-    "dist"
+    "dist/lib",
+    "dist/components"
   ],
   "main": "dist/lib/index.umd.cjs",
   "module": "dist/lib/index.js",
@@ -44,5 +45,9 @@
   },
   "peerDependencies": {
     "vue": "^3.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/supercll/vue3-virtual-scroll-list"
   }
 }
