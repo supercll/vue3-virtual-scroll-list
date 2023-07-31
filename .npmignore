@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
-/dist
+./dist/main.d.ts
+./dist/App.vue.d.ts
 
 # local env files
 .env.local
@@ -28,3 +29,4 @@ public/
 vite.config.js
 *.map
 *.html
+

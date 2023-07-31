@@ -1,7 +1,7 @@
 {
   "name": "vue3-virtual-scroll-list-component",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,27 +10,36 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "nanoid": "^4.0.2",
     "vue": "^3.3.4"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
     "@vitejs/plugin-vue": "^4.2.3",
+    "nanoid": "^4.0.2",
     "sass": "^1.64.1",
     "typescript": "^5.1.6",
     "vite": "^4.4.5",
-    "vue-tsc": "^1.8.8"
+    "vue-tsc": "^1.8.8",
+    "vue3-virtual-scroll-list-component": "^0.0.3"
   },
-  "files": ["lib"],
-  "main": "lib/vue3-virtual-scroll-list.umd.cjs",
-  "module": "lib/vue3-virtual-scroll-list.js",
-  "keywords": ["Components", "vue3", "virtual-scroll-list", "TS"],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/lib/index.umd.cjs",
+  "module": "dist/lib/index.js",
+  "typings": "dist/lib/index.d.ts",
+  "keywords": [
+    "Components",
+    "vue3",
+    "virtual-scroll-list",
+    "TS"
+  ],
   "exports": {
-    "./lib/style.css": "./lib/style.css",
-    "./css": "./lib/style.css",
-    ".":{
-      "import" : "./lib/vue3-virtual-scroll-list.js",
-      "require": "./lib/vue3-virtual-scroll-list.umd.cjs"
+    "./dist/lib/style.css": "./dist/lib/style.css",
+    "./css": "./dist/lib/style.css",
+    ".": {
+      "import": "./dist/lib/index.js",
+      "require": "./dist/lib/index.umd.cjs"
     }
   },
   "peerDependencies": {

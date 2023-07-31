@@ -17,7 +17,7 @@ export default defineConfig({
       entry: resolve(__dirname, './src/lib/index.ts'),
       name: 'virtualScrollList',
       formats: ['es', 'umd'],
-      fileName: 'vue3-virtual-scroll-list.js',
+      fileName: 'index',
     },
     rollupOptions: {
       external: ['vue', 'nanoid'],

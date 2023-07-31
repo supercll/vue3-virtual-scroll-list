@@ -26,8 +26,8 @@
 <script lang="ts" setup>
 import { ref, reactive, onMounted, Ref, defineComponent } from 'vue'
 import { nanoid } from 'nanoid'
-import VirtualScrollList from '../dist/lib/vue3-virtual-scroll-list.js'
-import '../lib/style.css'
+import VirtualScrollList from 'vue3-virtual-scroll-list-component'
+import 'vue3-virtual-scroll-list-component/css'
 
 defineComponent({
   VirtualScrollList
