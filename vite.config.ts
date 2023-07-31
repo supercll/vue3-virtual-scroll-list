@@ -20,7 +20,7 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['vue', 'nanoid'],
+      external: ['vue'],
       output: {
         globals: {
           vue: 'Vue',

@@ -7,7 +7,7 @@
 </template>
 ​
 <script lang="ts" setup>
-import { ref, reactive, onMounted, PropType, watch, computed, defineComponent } from 'vue'
+import { ref, reactive, onMounted, PropType, watch, computed, defineComponent, onUnmounted } from 'vue'
 
 defineComponent({
   name: 'VirtualScrollList'
@@ -62,8 +62,12 @@ watch(() => sourceData.value, () => {
   }
 })
 
-onMounted(async () => {
+onMounted(() => {
   outContainer.value?.addEventListener('scroll', createVirtualList)
+})
+
+onUnmounted(() => {
+  outContainer.value?.removeEventListener('scroll', createVirtualList)
 })
 </script>
 ​
